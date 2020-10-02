@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+}
+
+.todo-container {
+    font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+    width: 350px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.input-form h1,
+.input-form p {
+    margin: 0;
+    margin-bottom: 15px;
+    color: #2fffb8;
+}
+
+.input-form {
+    padding: 18px;
+    border-radius: 10px;
+    background: #2beda7;
+    box-shadow: 35px 35px 70px rgba(39, 213, 150, 0.5),
+        -35px -35px 70px rgba(47, 255, 184, 0.5);
+}
+
+.input-form p {
+    color: #2e2f30ce;
+}
+
+.input-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+.input-section input,
+.input-section button {
+    border-radius: 5px;
+    background: none;
+    outline: none;
+    border: 1px solid #2fffb8;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.input-section button {
+    padding: 0;
+}
+
+input::placeholder {
+    color: #2fffb8;
+}
+
+.todo-items {
+    min-height: 450px;
+}
+
+ul {
+    text-align: left;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    box-sizing: border-box;
+    list-style: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #2e2f30ce;
+    border-radius: 10px;
+    background: #2beda7;
+    box-shadow: 35px 35px 70px rgba(39, 213, 150, 0.5),
+        -35px -35px 70px rgba(47, 255, 184, 0.5);
+    display: grid;
+    grid-template-columns: 10% 70% 10% 10%;
+}
+.completed {
+    text-decoration: line-through;
+    font-style: italic;
+}
+@media (max-width: 350px) {
+    .todo-container {
+        width: 300px;
+    }
+}

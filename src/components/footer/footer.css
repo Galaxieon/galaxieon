@@ -1,0 +1,25 @@
+.footer {
+    margin: 25px 0 ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    font-family: "Comfortaa", Arial, Helvetica, sans-serif;
+}
+.footer h3 {
+    margin: 0;
+    padding: 0;
+    color: #0d7985;
+    text-align: center;
+}
+.footer span {
+    color: #2d2f30;
+}
+.footer a {
+    text-decoration: none;
+    color: #0d7985;
+}
+.footer a:hover {
+    color: #0d4f85;
+}

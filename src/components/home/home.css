@@ -1,0 +1,89 @@
+.main {
+    width: 100%;
+    font-family: "Comfortaa", Arial, Helvetica, sans-serif;
+}
+.main .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.todoapp,
+.quizapp {
+    width: 450px;
+    background: #2beda7;
+    box-shadow: -30px -30px 60px #2fffb6, 30px 30px 60px #27d898;
+    border-radius: 50px;
+}
+
+.todoapp h2,
+.quizapp h2 {
+    text-align: center;
+    padding: 25px;
+    font-size: 36px;
+}
+
+.todoapp h3,
+.quizapp h3 {
+    padding: 25px;
+    color: #3a9a77;
+}
+
+.todoapp p,
+.quizapp p {
+    padding: 25px;
+    color: #3a9a77;
+    font-size: 24px;
+    line-height: 27px;
+}
+
+.todoapp .link,
+.quizapp .link {
+    margin: 0 0 25px 25px;
+    width: 100px;
+    height: 50px;
+    background: #2beda7;
+    box-shadow: inset 5px 5px 10px #27d898, inset -5px -5px 10px #2fffb6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: #3a9a77;
+}
+
+@media (max-width: 990px) {
+    .main .container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .todoapp,
+    .quizapp {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 490px) {
+    .todoapp,
+    .quizapp {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .todoapp,
+    .quizapp {
+        width: 350px;
+    }
+}
+
+@media (max-width: 350px) {
+    .todoapp,
+    .quizapp {
+        width: 300px;
+    }
+}

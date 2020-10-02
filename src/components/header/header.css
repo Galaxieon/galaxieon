@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    padding: 25px;
+}
+.title h1 {
+    font-family: "Comfortaa", Arial, Helvetica, sans-serif;
+    color: #2fffb8;
+}
+
+.nav {
+    padding: 25px;
+    display: flex;
+}
+
+.nav .btn {
+    width: 50px;
+    height: 50px;
+    margin: 0 25px;
+    background: #2beda7;
+    box-shadow: inset -5px -5px 10px #2fffb6, inset 5px 5px 10px #27d898;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn a {
+    text-decoration: none;
+    color: #27d898;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: block;
+    }
+    .title {
+        text-align: center;
+    }
+    .nav {
+        padding: 0;
+        justify-content: center;
+    }  
+}
