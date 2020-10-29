@@ -30,6 +30,21 @@ export default function Home() {
                         <Link to="/Quiz-App">Explore</Link>
                     </div>
                 </div>
+                <div className="mysql-cart">
+                    <h2>Shopping Cart</h2>
+                    <h3>Demo E-commerce Website</h3>
+                    <h3>Nodejs, Express, Handlebars and MySQL Database</h3>
+                    <h3>NB: It is A Demo Only</h3>
+                    <div className="link">
+                        <a
+                            href="https://galaxieon-cart-mysql.herokuapp.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Explore
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     );

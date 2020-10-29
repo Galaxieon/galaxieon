@@ -83,6 +83,8 @@ export default function Quiz() {
     const [score, setScore] = useState(0);
     const questionNo = useRef();
     const maxQuestion = useRef();
+    const optionSec = useRef();
+    const question = useRef();
     var qno = 0;
     const answers = (isCorrect) => {
         if (isCorrect) {
@@ -95,6 +97,17 @@ export default function Quiz() {
             setShowScore(true);
             questionNo.current.style.visibility = "hidden";
             maxQuestion.current.style.visibility = "hidden";
+        }
+        if (qno % 2 === 0) {
+            optionSec.current.classList.toggle("active");
+            question.current.classList.toggle("active");
+            optionSec.current.classList.remove("set");
+            question.current.classList.remove("set");
+        } else {
+            optionSec.current.classList.toggle("set");
+            question.current.classList.toggle("set");
+            optionSec.current.classList.remove("active");
+            question.current.classList.remove("active");
         }
     };
     return (
@@ -122,8 +135,8 @@ export default function Quiz() {
                     </div>
                 ) : (
                     <div className="qns-conatiner">
-                        <p>{qns[count].q}</p>
-                        <div className="options-section">
+                        <p ref={question}>{qns[count].q}</p>
+                        <div ref={optionSec} className="options-section">
                             {qns[count].answerOptions.map(
                                 (answerOption, index) => (
                                     <button

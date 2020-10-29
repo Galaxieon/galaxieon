@@ -52,7 +52,9 @@ body {
     font-size: 2em;
     font-weight: 900;
     color: #fff;
+    animation: nos 0.5s ease-in-out;
 }
+
 .head-section h1 {
     font-size: 3em;
     padding: 25px;
@@ -76,7 +78,6 @@ body {
     font-size: 40px;
 }
 
-
 /* Qns Sections */
 p {
     padding: 15px;
@@ -89,6 +90,7 @@ p {
 .options-section {
     margin: 25px 50px;
     width: 400px;
+    animation: ini 1s ease-in-out;
 }
 
 .option-content {
@@ -108,6 +110,48 @@ p {
     font-size: 1.5em;
     transition: 1s ease-in-out;
     word-wrap: break-word;
+}
+.options-section.active {
+    animation: animate 1s ease-in-out;
+}
+.options-section.set {
+    animation: ani 1s ease-in-out;
+}
+@keyframes animate {
+    from {
+        width: 0%;
+        opacity: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes ani {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes ini {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes nos {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 500px) {

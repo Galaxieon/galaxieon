@@ -5,11 +5,13 @@
 .main .container {
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .todoapp,
-.quizapp {
+.quizapp,
+.mysql-cart {
+    margin: 25px 0;
     width: 450px;
     background: #2beda7;
     box-shadow: -30px -30px 60px #2fffb6, 30px 30px 60px #27d898;
@@ -17,7 +19,8 @@
 }
 
 .todoapp h2,
-.quizapp h2 {
+.quizapp h2,
+.mysql-cart h2 {
     text-align: center;
     padding: 25px;
     font-size: 36px;
@@ -25,13 +28,15 @@
 }
 
 .todoapp h3,
-.quizapp h3 {
+.quizapp h3,
+.mysql-cart h3 {
     padding: 25px;
     color: #3a9a77;
 }
 
 .todoapp p,
-.quizapp p {
+.quizapp p,
+.mysql-cart p {
     padding: 25px;
     color: #3a9a77;
     font-size: 24px;
@@ -39,7 +44,8 @@
 }
 
 .todoapp .link,
-.quizapp .link {
+.quizapp .link,
+.mysql-cart .link {
     margin: 0 0 25px 25px;
     width: 100px;
     height: 50px;
@@ -60,7 +66,6 @@
     .main .container {
         justify-content: center;
         align-items: center;
-        flex-direction: column;
     }
     .todoapp,
     .quizapp {
