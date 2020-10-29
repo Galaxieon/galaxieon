@@ -8,7 +8,7 @@ export default class Footer extends Component {
                     Developed By <span>Muhammad Semeer</span>
                     &nbsp;
                     <a
-                        href="https://www.instagram.com/dream_dev_/"
+                        href="https://www.instagram.com/muhammad_semeer/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
