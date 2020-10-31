@@ -11,7 +11,7 @@
 .todoapp,
 .quizapp,
 .mysql-cart {
-    margin: 25px 0;
+    margin: 25px 25px;
     width: 450px;
     background: #2beda7;
     box-shadow: -30px -30px 60px #2fffb6, 30px 30px 60px #27d898;
@@ -62,16 +62,6 @@
     color: #3a9a77;
 }
 
-@media (max-width: 990px) {
-    .main .container {
-        justify-content: center;
-        align-items: center;
-    }
-    .todoapp,
-    .quizapp {
-        margin: 20px 0;
-    }
-}
 
 @media (max-width: 490px) {
     .todoapp,
